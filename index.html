@@ -3,7 +3,12 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Portfolio Website</title>
+        <meta property="og:title" content="Prachi Gupta | Data Analyst & UX Researcher" />
+        <meta property="og:description" content="4 years of Experience. MBA @ Pace. Mixed-methods UX researcher. Building at the intersection of data and human behaviour." />
+        <meta property="og:image" content="https://prachigpt113-gif.github.io/Portfolio/images%20P/profile%20picture.jpeg" />
+        <meta property="og:url" content="https://prachigpt113-gif.github.io/Portfolio/" />
+        <meta property="og:type" content="website" />
+        <title>Prachi Gupta | Data Analyst & UX Researcher</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -153,28 +158,27 @@
                     <div class="ticker-track">
                     <div class="ticker-content ticker-left">
                         <span class="ticker-item">
-                        ♦ <strong>Active Research</strong> · Lost in the Learning Loop · Mixed Methods UX Study · Self-taught Learners
+                        ♦ <strong>NEW</strong> · Lost in the Learning Loop · Mixed-Methods CX Study · Now on Medium
+                        <span class="ticker-dot">☻</span>
+                        <span class="ticker-item">
+                        ♦ <strong>LIVE</strong> · The Learner Journey · Tableau Dashboard · OULAD Dataset · 32,593 users
                         </span>
                         <span class="ticker-dot">☻</span>
                         <span class="ticker-item">
-                        ♦ <strong>In Progress</strong> · The Learner Journey · Power BI Dashboard · OULAD Dataset · 32,593 users
-                        </span>
-                        <span class="ticker-dot">☻</span>
-                        <span class="ticker-item">
-                        ♦ <strong>Coming Soon</strong> · Full case studies publishing March 2026 · check back for findings
+                        ♦ <strong>Finding</strong> · The learning decision is an identity decision in disguise
                         </span>
                         <span class="ticker-dot">☻</span>
                         <!-- Duplicating for seamless loop -->
                         <span class="ticker-item">
-                        ♦ <strong>Active Research</strong> · Lost in the Learning Loop · Mixed Methods UX Study · Self-taught Learners
+                        ♦ <strong>NEW</strong> · Lost in the Learning Loop · Mixed-Methods CX Study · Now on Medium
                         </span>
                         <span class="ticker-dot">☻</span>
                         <span class="ticker-item">
-                        ♦ <strong>In Progress</strong> · The Learner Journey · Power BI Dashboard · OULAD Dataset · 32,593 users
+                        ♦ <strong>LIVE</strong> · The Learner Journey · Tableau Dashboard · OULAD Dataset · 32,593 users
                         </span>
                         <span class="ticker-dot">☻</span>
                         <span class="ticker-item">
-                        ♦ <strong>Coming Soon</strong> · Full case studies publishing March 2026 · check back for findings
+                        ♦ <strong>Finding</strong> · The learning decision is an identity decision in disguise
                         </span>
                         <span class="ticker-dot">☻</span>
                     </div>
@@ -186,35 +190,35 @@
                     <div class="ticker-track">
                     <div class="ticker-content ticker-right">
                         <span class="ticker-item">
-                        ♦ <strong>Key Finding</strong> · 1 in 3 self-taught learners never completes · The dropout crisis is real
+                        ♦ <strong>Key Finding</strong> · 75% abandon at least one course · Top reason: found something more interesting
                         </span>
                         <span class="ticker-dot">☻</span>
                         <span class="ticker-item">
-                        ♦ <strong>Research Question</strong> · How do self-taught learners decide what to learn next?
+                        ♦ <strong>Research Question</strong> · How do career-driven learners decide what to study next?
                         </span>
                         <span class="ticker-dot">☻</span>
                         <span class="ticker-item">
-                        ♦ <strong>Data</strong> · 32,593 students · 22 courses · 10M+ interactions analysed
+                        ♦ <strong>Data</strong> · n=20 survey · n=4 interviews · 10M+ interactions analysed · Feb–Mar 2026
                         </span>
                         <span class="ticker-dot">☻</span>
                         <!-- Duplicate -->
                         <span class="ticker-item">
-                        ♦ <strong>Key Finding</strong> · 1 in 3 self-taught learners never completes · The dropout crisis is real
+                        ♦ <strong>Key Finding</strong> · 75% abandon at least one course · Top reason: found something more interesting
                         </span>
                         <span class="ticker-dot">☻</span>
                         <span class="ticker-item">
-                        ♦ <strong>Research Question</strong> · How do self-taught learners decide what to learn next?
+                        ♦ <strong>Research Question</strong> · How do career-driven learners decide what to study next?
                         </span>
                         <span class="ticker-dot">☻</span>
                         <span class="ticker-item">
-                        ♦ <strong>Data</strong> · 32,593 students · 22 courses · 10M+ interactions analysed
+                        ♦ <strong>Data</strong> · n=20 survey · n=4 interviews · 10M+ interactions analysed · Feb–Mar 2026
                         </span>
                         <span class="ticker-dot">☻</span>
                     </div>
                     </div>
                 </div>
 
-                </div> 
+            </div> 
             <!-- Project Section -->
             <section id="Projects">
                 <!-- Intro -->
@@ -224,10 +228,120 @@
                     <p>These projects are my backstage pass; where I clean the data, test the hypotheses, and find the story hiding in the spreadsheet.</p>
                     <p>Think of this as my analytical audition: proving I can speak SQL and human.</p>
                 </div>
+
+                <!-- Project Toggle -->
+                <div class="project-toggle">
+                <div class="toggle-track">
+                    <div class="toggle-pill"></div>
+                    <button class="toggle-btn active" data-filter="analytics" onclick="filterProjects(this)">
+                    Data & Analytics
+                    </button>
+                    <button class="toggle-btn" data-filter="cx" onclick="filterProjects(this)">
+                    CX Research
+                    </button>
+                </div>
+                </div>
                 <!-- Project Cards -->
                 <div id="P-boxes">
-                    <!-- Project 1 -->
-                    <div class="P-sec" id="LM-card">
+                    <!-- CX Case Study Learning Loop -->
+                    <div class="P-sec" id="Learning_Loop" data-track="cx">
+                        <div class="project-header">
+                            <p class="title">
+                                <a href="#Learning_Loop">Lost in the Learning Loop</a>
+                            </p>
+                            <p class="Language">Mixed-Methods Research  |  Survey n=20  |  Interviews n=4  |  FigJam  |  Otter.ai</p>
+                        </div>
+                        
+                        <!-- Expandable Content - Initially hidden -->
+                        <div class="project-details">
+                            <div class="details-content">
+                                <p><strong>Description:</strong> How do career-driven learners decide what to study next — and why do 75% abandon what they start? An independent mixed-methods study combining a quantitative survey with four moderated interviews, conducted January–March 2026.</p> 
+                                <p><strong>Key Findings:</strong> The learning decision is an identity decision in disguise. The variable separating commitment from drift was not discipline or time — it was clarity about who the learner was becoming.</p>
+                                    <ul>
+                                        <li>75% of respondents abandoned at least one course — the top reason wasn't losing motivation, it was finding something more interesting</li>
+                                        <li>Excitement, pressure, and overwhelm were felt simultaneously — not separately</li>
+                                        <li>Four learner archetypes emerged: Decided, Searching, Drifting, and Moving</li>
+                                        <li>The variable separating commitment from drift was not discipline or time — it was identity clarity</li>
+                                        <li>Core finding: the learning decision is an identity decision in disguise</li>
+                                    </ul></p>
+                                <p><strong>Design Recommendations:</strong>
+                                    <ol>
+                                            <li>Redesign the onboarding question from "what do you want to learn?" to "who are you becoming by choosing this?"</li>
+                                            <li>Treat the entry decision as a design surface, not a friction point to eliminate</li>
+                                            <li>Distinguish between stuck and blocked learners — they need different interventions</li>
+                                        </ol></p>
+                                <p>Tools: Fillout (survey), Otter.ai (transcripts), FigJam (affinity mapping), mixed-methods thematic analysis</p>
+                                <p>Read the full case study on  <a href="https://medium.com/@prachigpt113/lost-in-the-learning-loop-91669eed5cb3" class="link" target="_blank">Medium</a>.</p>
+                                <p>View the affinity maps on <a href="https://www.figma.com/board/oLbSdxxnn84LNid95hdj4n/Learning-Loop?node-id=0-1&t=edgVdm9sZ1RqXCRe-1" class="link" target="_blank">FigJam</a> </p>
+                                
+                                <!-- Project Images -->
+                                <div class="project-images">
+                                    <div class="image-gallery">
+                                        <a href="LL/Survey Findings.png" class="thumbnail"> Survey Findings
+                                            <img src="LL/Survey Findings.png" alt="Overview">
+                                        </a>
+                                        <a href="LL/interview_analysis.png" class="thumbnail">Interview Analysis
+                                            <img src="LL/interview_analysis.png" alt="Interview Analysis">
+                                        </a>
+                                        <a href="LL/CC_Pattern.png" class="thumbnail">Cross-Cutting Pattern
+                                            <img src="LL/CC_Pattern.png" alt="CC Pattern">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Oulad -->
+                    <div class="P-sec" id="OULAD-card" data-track="analytics">
+                                <div class="project-header">
+                                    <p class="title">
+                                        <a href="#OULAD-card">The Learner Journey: OULAD Analytics</a>
+                                    </p>
+                                    <p class="Language">Tableau  |  Python  |  Product Analytics</p>
+                                </div>
+                                
+                                <!-- Expandable Content - Initially hidden -->
+                                <div class="project-details">
+                                    <div class="details-content">
+                                        <p><strong>Description:</strong> Analysed 32,593 Open University learners to uncover what drives student withdrawal — and what to do about it.</p> 
+                                        <p><strong>Key Insights:</strong> 
+                                            <ul>
+                                                <li>10,156 learners disengaged between enrolment and active participation</li>
+                                                <li>No formal qualifications = 42.9% withdrawal rate (highest of any group)</li>
+                                                <li>Youngest learners (0-35) churn at 32.2% vs 25% for 55+</li>
+                                                <li>Course CCC anomaly: average scores but highest dropout; course design drives disengagement more than ability</li>
+                                                <li>Early assessment score alone does not predict withdrawal (FFF outlier)</li>
+                                            </ul></p>
+                                        <p><strong>Three Priorities for Retention:</strong>
+                                            <ol>
+                                                    <li>Trigger engagement check-in at week 2 of enrolment</li>
+                                                    <li>Audit course design for CCC, not student ability</li>
+                                                    <li>Targeted support for 0-35 age group</li>
+                                                </ol></p>
+                                        <p>Tools: Python, Tableau, OULAD Open Dataset (Open University)</p>
+                                        <p>Checkout the work at <a href="https://public.tableau.com/app/profile/prachi.gupta6069/viz/TheLearnerJourney_OULADAnalytics/Story1" class="link" target="_blank">Tableau</a>.</p>
+                                        
+                                        <!-- Project Images -->
+                                        <div class="project-images">
+                                            <div class="image-gallery">
+                                                <a href="OULAD/1.png" class="thumbnail"> Overview
+                                                    <img src="OULAD/1.png" alt="Overview">
+                                                </a>
+                                                <a href="OULAD/2.png" class="thumbnail">Risks
+                                                    <img src="OULAD/2.png" alt="Risk">
+                                                </a>
+                                                <a href="OULAD/3.png" class="thumbnail">Retention
+                                                    <img src="OULAD/3.png" alt="Retention">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+
+                    <!--Project SQL-->
+                    <div class="P-sec" id="LM-card" data-track="analytics">
                         <div class="project-header">
                             <p class="title">
                                 <a href="#LM-card">Library Management Analysis</a>
@@ -280,8 +394,8 @@
                         </div>
                     </div>
 
-                    <!-- Project 2 -->
-                    <div class="P-sec" id="Germany-card">
+                    <!-- Project Germany -->
+                    <div class="P-sec" id="Germany-card" data-track="analytics">
                         <div class="project-header">
                             <p class="title">
                                 <a href="#Germany-card">Germany's Energy Transition</a>
@@ -331,10 +445,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                    </div>
 
-                    <!-- Project 3 -->
-                    <div class="P-sec" id="Thyroid-card">
+                    <!-- Project Thyroid -->
+                    <div class="P-sec" id="Thyroid-card" data-track="analytics">
                         <div class="project-header">
                             <p class="title">
                                 <a href="#Thyroid-card">Thyroid Cancer Risk Analysis</a>
@@ -392,8 +506,8 @@
                         </div>
                     </div>
 
-                    <!-- Project 4 -->
-                    <div class="P-sec" id="JOLT-card">
+                    <!-- Project JOLT -->
+                    <div class="P-sec" id="JOLT-card" data-track="analytics">
                         <div class="project-header">
                             <p class="title">
                                 <a href="#JOLT-card">Labor Market Strategic Analysis </a>
