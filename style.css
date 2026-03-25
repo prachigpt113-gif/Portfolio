@@ -141,31 +141,29 @@ hr{
 }
 
 .sticky-resume-wrapper {
-  position: fixed;
+  position: fixed;  
   top: 20px;
   right: 20px;
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.sticky-resume-wrapper:hover .resume-dropdown {
-  display: flex;
+  z-index: 99999;
 }
 
 .resume-dropdown {
   display: none;
   flex-direction: column;
   position: absolute;
-  top: 48px;        /* push it below the button*/
+  top: 40px;
   right: 0;
   margin-top: 4px;
-  background: #a788c4;
+  background: #cbb1e4;
   border: 1px solid #694387;
   border-radius: 10px;
   overflow: hidden;
   min-width: 200px;
+  z-index: 99999; 
+}
+
+.resume-dropdown.open {
+  display: flex;
 }
 
 .resume-dropdown a {
@@ -200,6 +198,18 @@ hr{
     background: rgb(206, 201, 212);
     color: #333;
     /* transform: translateY(-2px); */
+}
+
+@media (max-width: 600px) {
+  .sticky-resume-wrapper {
+    top: 10px;
+    right: 10px;
+  }
+
+  .sticky-resume {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
 }
 
 .timeline-section {
@@ -1217,6 +1227,14 @@ video.is-playing {
         aspect-ratio: auto;
         min-height: 300px;
     }
+}
+
+@media (max-width: 600px) {
+  .Language {
+    font-size: 11px;
+    line-height: 1.6;
+    word-break: break-word;
+  }
 }
 
 

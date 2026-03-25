@@ -17,6 +17,17 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 observer.observe(video);
 
+function toggleResume(e) {
+  e.stopPropagation();
+  const dropdown = document.getElementById('resumeDropdown');
+  dropdown.classList.toggle('open');
+}
+
+// Close when clicking anywhere else
+document.addEventListener('click', () => {
+  document.getElementById('resumeDropdown').classList.remove('open');
+});
+
 function filterProjects(btn) {
   document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
