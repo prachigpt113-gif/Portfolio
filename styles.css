@@ -491,3 +491,47 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
 @media(prefers-reduced-motion:reduce){
   .js .reveal-on-scroll{opacity:1;transform:none;transition:none}
 }
+
+/*July 13*/
+/* ===== HERO: two columns ===== */
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:44px}}
+
+/* ===== LIVE APP CARD ===== */
+.live-card{
+  position:relative;display:block;text-decoration:none;color:var(--paper-on-dark);
+  background:var(--indigo);border-radius:18px;padding:30px 30px 26px;
+  box-shadow:0 26px 60px -30px rgba(26,20,23,.65);
+  transition:transform .3s ease, box-shadow .3s ease;overflow:hidden;
+}
+.live-card:hover{transform:translateY(-5px);box-shadow:0 34px 70px -30px rgba(26,20,23,.75)}
+.live-card::before{content:"";position:absolute;top:-60px;right:-60px;width:180px;height:180px;border-radius:50%;
+  background:radial-gradient(circle, rgba(192,53,107,.35), transparent 68%);pointer-events:none}
+
+.live-badge{display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono';font-size:11px;
+  letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--persimmon);
+  border-radius:999px;padding:6px 13px;margin-bottom:20px}
+.live-dot{width:7px;height:7px;border-radius:50%;background:#fff;position:relative}
+.live-dot::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(255,255,255,.65);
+  animation:ping 1.8s ease-out infinite}
+@keyframes ping{0%{transform:scale(.75);opacity:.9}100%{transform:scale(1.9);opacity:0}}
+
+.live-name{font-family:'Fraunces';font-weight:600;font-size:31px;color:#fff;line-height:1.1;margin-bottom:4px}
+.live-sub{font-family:'JetBrains Mono';font-size:11.5px;letter-spacing:.05em;color:#c4b3bc;text-transform:uppercase;margin-bottom:16px}
+.live-desc{font-size:15px;color:#d9ced3;line-height:1.55;margin-bottom:22px}
+.live-desc em{font-style:italic;color:#fff}
+
+.live-meta{display:flex;gap:18px;flex-wrap:wrap;padding-top:16px;border-top:1px solid #ffffff1f;margin-bottom:20px}
+.lm{font-family:'JetBrains Mono';font-size:10.5px;color:#a9979f}
+.lm b{display:block;font-family:'Fraunces';font-size:17px;color:#fff;font-weight:500;margin-bottom:2px}
+
+.live-cta{display:inline-flex;align-items:center;gap:9px;font-family:'JetBrains Mono';font-size:13.5px;font-weight:500;
+  background:#fff;color:var(--ink);border-radius:999px;padding:12px 22px;transition:gap .25s ease}
+.live-card:hover .live-cta{gap:14px}
+.live-cta .arw{transition:transform .25s ease}
+.live-card:hover .live-cta .arw{transform:translateX(2px)}
+
+@media(prefers-reduced-motion:reduce){
+  .live-dot::after{animation:none;display:none}
+  .live-card{transition:none}
+}
