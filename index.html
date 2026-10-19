@@ -183,67 +183,41 @@
   </div>
 </section>
 
-  <!-- ============ SPRINTS ============ -->
+ <!-- ============ SPRINTS ============ -->
+<!-- Replace your whole current SPRINTS section with this block.
+     Styles are included at the bottom, so nothing else is needed in styles.css. -->
 <section class="sprints" id="sprints">
   <div class="wrap">
     <div class="sec-label"><span class="num">02</span><span>Sprints · real problems, short clocks</span></div>
     <h2 class="sec-h">Small teams, short clocks, real problems.</h2>
-    <p class="sec-intro">The flagship shows what I do with months. These show what I do with hours: hackathons and fast builds where there's no time to hide behind process. Same loop, compressed: find the real mechanism, decide what to build, and make sure a real person could actually use it.</p>
-
-        <article class="sprint" id="blockreport">
-      <div class="sprint-head">
-        <div class="ch-kicker">Sprint 01 · Newark Tech Week · one day</div>
-        <h3 class="sprint-title">BLOCK Report: one complaint gets ignored. Two hundred become evidence.</h3>
-        <p class="sprint-intro">I walked into a civic hackathon without a team, pitched a problem to a room of engineers, and built a working AI prototype with the developer who joined me.</p>
-      </div>
-      <div class="br-grid reveal-on-scroll">
-        <div class="br-text">
-          <div class="ctag">AI civic product · 0→1 in one day · PM with developer Satvik L.</div>
+    <p class="sec-intro">The flagship shows what I do with months. These show what I do with hours: hackathons and fast builds where there's no time to hide behind process. Same loop, compressed.</p>
  
-          <p>Newark residents were reporting missed garbage pickups for weeks and being told to wait. They <i>were</i> complaining. The real problem: every complaint arrived alone, so nobody could see the pattern.</p>
-          <p>BLOCK Report lets residents report by web or plain text message, in English, Spanish or Portuguese. AI sorts each report, reports on the same block group into clusters on a map, and organizers get a one-click evidence packet for City Council.</p>
- 
-          <p class="punch">Our first AI replies promised "we'll follow up." We weren't following up. I rewrote them to say only what's true: <i>your report counts.</i></p>
- 
-          <div class="br-stats">
-            <div class="br-stat"><div class="v">2</div><div class="l">AI steps: sort each report, write the council packet</div></div>
-            <div class="br-stat"><div class="v">3</div><div class="l">languages, by web or plain SMS</div></div>
-            <div class="br-stat"><div class="v">1 day</div><div class="l">from problem to working prototype</div></div>
-          </div>
- 
-          <div class="br-links">
-            <button class="walkthrough br-open" data-chapter="4" aria-label="Open the BLOCK Report walkthrough">View walkthrough &rarr;</button>
-            <a class="more" href="Block Report/BLOCK Report Prototype" target="_blank" rel="noopener noreferrer">Try the prototype &rarr;</a>
-          </div>
-        </div>
- 
-        <div class="br-media">
-          <video controls muted playsinline preload="metadata" poster="Block Report/poster.jpg">
-            <source src="Block Report/BLOCK_Report_demo.mp4" type="video/mp4">
-            <a href="Block Report/BLOCK_Report_demo.mp4">Watch the demo video</a>
-          </video>
-          <div class="br-caption">2-minute demo · resident report → map → council packet</div>
+    <!-- ===== SPRINT 01 · BLOCK REPORT =====
+         To add a project: copy this whole <article>, paste it below, change the content. -->
+    <article class="sc reveal-on-scroll" id="blockreport">
+      <div class="sc-text">
+        <img class="sc-logo" src="Block Report/block-report-logo-horizontal-2000px.png" alt="BLOCK Report">
+        <div class="sc-kicker">Sprint 01 · Newark Tech Week · one day</div>
+        <div class="sc-status">v1 · hackathon prototype &nbsp;·&nbsp; v2 in progress</div>
+        <h3 class="sc-title">One complaint gets ignored. Two hundred become evidence.</h3>
+        <p>Newark residents were reporting missed garbage pickups for weeks and being told to wait. They <i>were</i> complaining. But every complaint arrived alone, so nobody could see the pattern.</p>
+        <p>I pitched the problem without a team, teamed up with developer Satvik L., and in one day we built a working AI prototype: residents report by web or plain text message in their own language, AI sorts and clusters the reports by block, and organizers get a one-click evidence packet for City Council.</p>
+        <p class="sc-punch">Our first AI replies promised "we'll follow up." We weren't. I rewrote them to say only what's true: <i>your report counts.</i></p>
+        <div class="sc-meta">2 AI steps · 3 languages · web + SMS · built in 1 day</div>
+        <p class="sc-next"><b>Now building v2:</b> stricter checks on everything the AI produces, and interviews with community organizers to test whether the council packet fits how they actually work.</p>
+        <div class="sc-actions">
+          <button class="walkthrough sc-open" data-chapter="4" aria-label="Open the BLOCK Report walkthrough">View walkthrough &rarr;</button>
+          <a href="Block Report/BLOCK Report Prototype.html" target="_blank" rel="noopener noreferrer">Try the prototype &rarr;</a>
+          <a href="blockreport/BLOCK_Report_one_pager.pdf" target="_blank" rel="noopener noreferrer">One-page brief (PDF) &rarr;</a>
         </div>
       </div>
- 
-      <div class="br-decisions reveal-on-scroll">
-        <div class="br-dec"><div class="k">01</div><h4>Pass the "why not ChatGPT?" test</h4><p>A chatbot helps one person write one complaint. It can't combine 200 neighbors into evidence.</p></div>
-        <div class="br-dec"><div class="k">02</div><h4>Never promise what you can't deliver</h4><p>Confirmations come from a fixed template, not the AI, so residents only hear what's true.</p></div>
-        <div class="br-dec"><div class="k">03</div><h4>Count neighbors, not reports</h4><p>One person posting five times isn't five people. Repeats become "still happening" updates.</p></div>
-        <div class="br-dec"><div class="k">04</div><h4>AI suggests, people decide</h4><p>Residents confirm every category. Organizers choose what goes into every packet.</p></div>
+      <div class="sc-media">
+        <video controls muted playsinline preload="metadata" poster="Block Report/poster.jpg">
+          <source src="Block Report/BLOCK_Report_demo.mp4" type="video/mp4">
+        </video>
+        <div class="sc-cap">2-minute demo · report → map → council packet</div>
       </div>
- 
-      <a class="br-brief reveal-on-scroll" href="blockreport/BLOCK_Report_one_pager.pdf" target="_blank" rel="noopener noreferrer">
-        <img src="Block Report/block-report-logo-horizontal-2000px.png" alt="BLOCK Report one-page brief">
-        <div class="br-brief-text">
-          <div class="ctag">One-page brief · PDF</div>
-          <h3>The whole project on one page.</h3>
-          <p>The problem, the real mechanism, who it's for, how it works, where AI fits and why, and the product decisions behind it. Made to be printed, forwarded, or skimmed in a minute.</p>
-          <span class="br-brief-cta">Read the brief &rarr;</span>
-        </div>
-      </a>
- 
-      <div class="br-honest">Hackathon prototype with fictional sample data. No real users or impact claimed.</div>
+      <div class="sc-honest">Hackathon prototype with fictional sample data. No real users or impact claimed.</div>
     </article>
     <!-- ===== END SPRINT 01 ===== -->
  
