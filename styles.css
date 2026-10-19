@@ -535,3 +535,94 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
   .live-dot::after{animation:none;display:none}
   .live-card{transition:none}
 }
+
+/* =========================================================
+   BLOCK Report section 
+   ========================================================= */
+
+
+.br-grid{
+  display:grid;grid-template-columns:1fr 1.05fr;
+  gap:48px;align-items:center;margin-top:48px}
+@media(max-width:860px){.br-grid{grid-template-columns:1fr;gap:28px}.br-media{order:-1}}
+
+.br-text .ctag{
+  font-family:"JetBrains Mono";font-size:11.5px;color:var(--muted);
+  text-transform:uppercase;letter-spacing:.05em;margin-bottom:16px}
+.br-text p{font-size:16.5px;color:#333;margin-bottom:14px}
+.br-text .punch{
+  font-family:"Fraunces";font-style:italic;font-size:18px;color:var(--ink);
+  border-left:3px solid var(--persimmon);padding-left:14px;margin:20px 0}
+
+.br-stats{display:flex;gap:28px;flex-wrap:wrap;margin:22px 0 24px}
+.br-stat .v{font-family:"Fraunces";font-size:34px;line-height:1;color:var(--ink)}
+.br-stat .l{font-family:"JetBrains Mono";font-size:11.5px;color:var(--muted);margin-top:6px;max-width:18ch}
+
+.br-links{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.br-links a.more{
+  font-family:"JetBrains Mono";font-size:12.5px;text-decoration:none;
+  border-bottom:1px solid var(--ink);padding-bottom:2px}
+
+/* walkthrough trigger as a pill (overrides the image-card .walkthrough look) */
+.walkthrough.br-open{
+  display:inline-flex;align-items:center;
+  font-family:"JetBrains Mono";font-size:12.5px;color:#fff;
+  background:var(--persimmon);border:none;border-radius:999px;
+  padding:10px 18px;overflow:visible;cursor:pointer;transition:filter .2s, transform .2s}
+.walkthrough.br-open:hover{filter:brightness(1.08);transform:translateX(2px)}
+
+/* video */
+.br-media video{
+  width:100%;height:auto;display:block;border-radius:12px;
+  border:1px solid var(--line);background:var(--indigo);
+  box-shadow:0 26px 60px -34px rgba(26,20,23,.55)}
+.br-caption{font-family:"JetBrains Mono";font-size:11.5px;color:var(--muted);margin-top:10px;text-align:right}
+
+/* decision cards */
+.br-decisions{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:56px}
+@media(max-width:960px){.br-decisions{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.br-decisions{grid-template-columns:1fr}}
+.br-dec{
+  border:1px solid var(--line);border-radius:12px;padding:20px 20px 18px;
+  background:#f4f2ec;transition:transform .25s, box-shadow .25s}
+.br-dec:hover{transform:translateY(-3px);box-shadow:0 18px 40px -30px #00000055}
+.br-dec .k{font-family:"JetBrains Mono";font-size:11.5px;color:var(--persimmon);margin-bottom:8px}
+.br-dec h4{font-family:"Fraunces";font-weight:500;font-size:19px;line-height:1.15;margin-bottom:8px}
+.br-dec p{font-size:14px;color:#3a3a3c;line-height:1.5}
+
+/* one-page brief card */
+.br-brief{
+  display:grid;grid-template-columns:220px 1fr;gap:34px;align-items:center;
+  margin-top:26px;padding:26px;border-radius:14px;text-decoration:none;color:var(--paper-on-dark);
+  background:var(--indigo);box-shadow:0 26px 60px -34px rgba(26,20,23,.6);
+  position:relative;overflow:hidden;transition:transform .3s ease, box-shadow .3s ease}
+.br-brief::before{content:"";position:absolute;top:-70px;right:-70px;width:200px;height:200px;border-radius:50%;
+  background:radial-gradient(circle, rgba(192,53,107,.35), transparent 68%);pointer-events:none}
+.br-brief:hover{transform:translateY(-4px);box-shadow:0 34px 70px -32px rgba(26,20,23,.75)}
+.br-brief img{width:100%;height:auto;display:block;border-radius:6px;
+  transform:rotate(-2deg);box-shadow:0 14px 30px -12px #000;transition:transform .3s ease}
+.br-brief:hover img{transform:rotate(0deg) scale(1.02)}
+.br-brief .ctag{font-family:"JetBrains Mono";font-size:11.5px;color:#c4b3bc;text-transform:uppercase;letter-spacing:.05em}
+.br-brief h3{font-family:"Fraunces";font-weight:500;font-size:28px;color:#fff;line-height:1.1;margin:10px 0 12px}
+.br-brief p{font-size:15.5px;color:#d9ced3;line-height:1.55;margin-bottom:18px;max-width:52ch}
+.br-brief-cta{display:inline-flex;align-items:center;gap:9px;font-family:"JetBrains Mono";font-size:13px;
+  background:#fff;color:var(--ink);border-radius:999px;padding:11px 20px;transition:gap .25s ease}
+.br-brief:hover .br-brief-cta{gap:14px}
+@media(max-width:640px){.br-brief{grid-template-columns:1fr;gap:22px}.br-brief img{max-width:240px}}
+
+.br-honest{font-size:12px;color:#9A95A6;font-style:italic;margin-top:18px}
+
+/* link-styled version of the modal's call button (sheet 4) */
+.call-link{
+  display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono';
+  font-size:12.5px;font-weight:500;background:var(--persimmon);color:#fff;
+  text-decoration:none;border-radius:999px;padding:9px 17px;transition:filter .2s, transform .2s}
+.call-link:hover{filter:brightness(1.08);transform:translateX(2px)}
+
+/* ---------- Sprints section: one <article class="sprint"> per project ---------- */
+.sprints{border-bottom:1px solid var(--line)}
+.sprint{padding-top:56px;margin-top:48px;border-top:1px solid var(--line)}
+.sprint-head .ch-kicker{font-family:"JetBrains Mono";font-size:12px;letter-spacing:.06em;color:var(--persimmon);margin-bottom:12px}
+.sprint-title{font-family:"Fraunces";font-weight:500;font-size:clamp(24px,3.2vw,34px);line-height:1.1;max-width:24ch}
+.sprint-intro{margin-top:14px;max-width:58ch;color:#333}
+.sprint .br-grid{margin-top:36px}
